@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Site — Groupe WhatsApp</title>
+  <meta name="description" content="Site officiel du groupe WhatsApp - informations, événements et lien pour rejoindre." />
+  <style>
+    :root{--accent:#25D366;--bg:#f7f8fb;--card:#ffffff;--muted:#666}
+    *{box-sizing:border-box}
+    body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:var(--bg); color:#111}
+    header{background:linear-gradient(90deg,#0f172a, #0b1220); color:#fff; padding:36px 16px}
+    .container{max-width:980px;margin:0 auto;padding:20px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#1aa65a);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:8px 0 0;color:#d1d5db}
+    .hero{display:flex;gap:24px;align-items:center;justify-content:space-between;padding:28px 0}
+    .card{background:var(--card);border-radius:12px;box-shadow:0 6px 18px rgba(12,12,30,.06);padding:18px}
+    .join-btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:600}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px}
+    .members{display:flex;flex-wrap:wrap;gap:10px}
+    .member{display:flex;align-items:center;gap:10px;padding:8px;border-radius:8px;background:#f3f6f9}
+    .avatar{width:44px;height:44px;border-radius:10px;background:#e6eef2;display:inline-flex;align-items:center;justify-content:center;font-weight:700;color:#1f2937}
+    .events li{margin-bottom:12px}
+    footer{padding:30px 0;text-align:center;color:var(--muted)}
+    .muted{color:var(--muted)}
+    .notice{font-size:13px;color:#374151}
+    @media (max-width:880px){.grid{grid-template-columns:1fr} .hero{flex-direction:column;align-items:flex-start}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <div class="logo">S</div>
+        <div>
+          <h1>Site — Groupe WhatsApp</h1>
+          <p class="lead">Le site officiel du groupe WhatsApp — partage, événements et discussions.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <section class="hero">
+      <div style="flex:1">
+        <div class="card">
+          <h2>Bienvenue au groupe « Site »</h2>
+          <p class="muted">Ici on partage des infos utiles, on organise des événements et on reste connectés.</p>
+
+          <p style="margin-top:12px">Description courte : <strong>Remplacez ce texte</strong> par une description de votre groupe — sujet, règles, objectifs.</p>
+
+          <div style="margin-top:16px">
+            <a id="joinLink" class="join-btn" href="YOUR_WHATSAPP_INVITE_LINK" target="_blank" rel="noopener">Rejoindre le groupe</a>
+            <span style="margin-left:10px;color:var(--muted);font-size:14px">(ouvre WhatsApp)</span>
+          </div>
+
+          <p class="notice" style="margin-top:12px">Astuce : remplacez <code>YOUR_WHATSAPP_INVITE_LINK</code> par votre lien d'invitation WhatsApp (par ex. <code>https://chat.whatsapp.com/abcdef...</code>).</p>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>Règles du groupe</h3>
+          <ul>
+            <li>Respect et courtoisie.</li>
+            <li>Pas de spam.</li>
+            <li>Partage utile uniquement (sujets liés au groupe).</li>
+            <li>Contactez un admin si problème.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>FAQ rapide</h3>
+          <p><strong>Q :</strong> Comment poster ? <br><strong>A :</strong> Envoyez vos messages dans le groupe WhatsApp, ou contactez un admin pour publier sur le site.</p>
+        </div>
+      </div>
+
+      <aside style="width:320px">
+        <div class="card">
+          <h4>Membres actifs</h4>
+          <div class="members" id="members">
+            <!-- exemples de membres : remplacez par les vrais -->
+            <div class="member"><div class="avatar">AA</div><div><strong>Ali</strong><div class="muted" style="font-size:13px">Admin</div></div></div>
+            <div class="member"><div class="avatar">MA</div><div><strong>Marie</strong><div class="muted" style="font-size:13px">Membre</div></div></div>
+            <div class="member"><div class="avatar">JS</div><div><strong>Jean</strong><div class="muted" style="font-size:13px">Membre</div></div></div>
+          </div>
+
+          <hr style="margin:12px 0;border:none;border-top:1px solid #eef2f7">
+
+          <h4>Prochains événements</h4>
+          <ul class="events">
+            <li><strong>Réunion en ligne</strong><br><span class="muted">10 sept. 2025 — 18:00</span></li>
+            <li><strong>Atelier partage</strong><br><span class="muted">25 sept. 2025 — 14:00</span></li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h4>Contact Admin</h4>
+          <p class="muted">Pour modifications ou problèmes : <a href="mailto:admin@example.com">admin@example.com</a></p>
+        </div>
+      </aside>
+    </section>
+
+    <section style="margin-top:20px">
+      <div class="card">
+        <h3>Galerie</h3>
+        <p class="muted">Images et fichiers partagés par les membres (remplacez par les vôtres).</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:10px">
+          <div style="background:#f3f6f9;height:100px;border-radius:8px;display:flex;align-items:center;justify-content:center">Image 1</div>
+          <div style="background:#f3f6f9;height:100px;border-radius:8px;display:flex;align-items:center;justify-content:center">Image 2</div>
+          <div style="background:#f3f6f9;height:100px;border-radius:8px;display:flex;align-items:center;justify-content:center">Image 3</div>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top:20px">
+      <div class="card">
+        <h3>Newsletter / Annonces</h3>
+        <p class="muted">Envoyer une annonce par e‑mail aux membres :</p>
+        <form onsubmit="window.location='mailto:admin@example.com?subject='+encodeURIComponent(document.getElementById('subj').value)+'&body='+encodeURIComponent(document.getElementById('msg').value);return false;">
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <input id="subj" placeholder="Sujet" style="padding:8px;border-radius:8px;border:1px solid #e6eef2" required>
+            <textarea id="msg" placeholder="Votre message" style="padding:8px;border-radius:8px;border:1px solid #e6eef2" rows="4" required></textarea>
+            <button type="submit" class="join-btn">Envoyer par e‑mail</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container">
+    <div class="card">
+      <p class="muted">© <span id="year"></span> Site — Groupe WhatsApp. Conçu pour faciliter la communication du groupe.</p>
+      <p style="margin-top:8px;font-size:13px;color:#374151">Hébergement conseillé : GitHub Pages, Netlify ou Vercel. Besoin d'aide pour déployer ? Contacte l'admin.</p>
+    </div>
+  </footer>
+
+  <script>
+    // petites améliorations JS
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Si l'utilisateur n'a pas remplacé le lien d'invitation, affiche une alerte douce
+    const join = document.getElementById('joinLink');
+    if(join.href.includes('YOUR_WHATSAPP_INVITE_LINK')){
+      join.addEventListener('click', function(e){
+        e.preventDefault();
+        alert('Remplacez le lien d\'invitation WhatsApp dans le fichier HTML (YOUR_WHATSAPP_INVITE_LINK) par votre lien de groupe pour que ce bouton fonctionne.');
+      });
+    }
+  </script>
+</body>
+</html>
